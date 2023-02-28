@@ -1,0 +1,129 @@
+@import "fonts"
+@import "vars"
+
+header
+	padding: 26px 0 28px
+	background: #000000
+	color: #fff
+	font-size: 20px
+	position: absolute
+	z-index: 3
+	width: 100%
+	left: 0
+	top: 0
+	
+.logo
+	max-width: 128px
+	width: 100%
+	@include d-flex
+	color: #fff
+	margin: 0 58px 0 0
+
+.nav-menu
+	margin: 0 auto 0 220px
+
+.menu
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	font-size: 20px
+	font-weight: bold
+	text-transform: uppercase
+	li
+		margin: 0 22px 0 0
+		&:last-child
+			margin: 0
+		a
+			color: #FBBB1F
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				left: 50%
+				transform: translate(-50%,0)
+				bottom: -3px
+				width: 0
+				height: 2px
+				border-radius: 2px
+				background: $accent
+				transition: .3s ease
+			&:hover
+				&::before
+					width: 100%	
+
+.booking
+	display: flex
+	align-items: center
+	p
+		margin: 0 11px 0 0
+		display: flex
+		align-items: end
+		&:last-child
+			margin: 0		
+	a
+		margin: 0 0 0 5px		
+
+.fixed-block-wrapper
+	position: fixed
+	z-index: 3
+	right: -414px
+	top: 50%
+	transform: translate(0,-50%)
+	display: flex
+	align-items: center
+	transition: .3s ease
+
+.fixed-block
+	transform: rotate(-90deg)
+	background: $accent
+	color: #000000
+	font-size: 20px
+	font-weight: bold
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 7px 16px 15px
+	border-radius: 6px 6px 0 0
+	margin: 0 -127px 0 0
+	span
+		transform: rotate(-360deg)
+	&:hover
+		background: $hover
+		color: #000
+
+.fixed-top-menu
+	border-radius: 5px 0px 0px 5px
+	background: #1A1A18
+	color: #fff
+	max-width: 414px
+	width: 100%
+	font-size: 16px
+	padding: 18px 25px 21px 19px
+	&__gallery
+		width: 100%
+		display: flex
+		align-items: start
+		flex-wrap: wrap
+		justify-content: space-between
+	&__box
+		width: calc(50% - 9px)
+		position: relative
+		@include d-flex
+		&:before
+			content: ''
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%,-50%)
+			width: 30px
+			height: 30px
+			@include d-flex
+			background: url('../img/loupe.svg') no-repeat center
+			background-size: 100% 
+	h3
+		margin: 18px 0 10px
+		font-size: 16px
+		line-height: 20px
+		text-transform: uppercase		
+	.box-text
+		font-size: 16px

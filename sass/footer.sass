@@ -1,0 +1,59 @@
+@import "fonts"
+@import "vars"
+
+.modal-dialog
+	max-width: 486px
+
+.modal-content
+	background: $accent
+	border: none
+	border-radius: 5px
+	padding: 28px 35px 22px
+
+.modal-header
+	padding: 0
+	border: none		
+	border-radius: 0
+	flex-wrap: wrap
+	margin: 0 auto 30px
+	.btn-close
+		padding: 0
+		margin: 0
+		opacity: 1
+		z-index: 1
+		position: absolute
+		right: 12px
+		top: 10px
+		background: transparent
+
+.modal-title
+	text-align: center
+	font-weight: bold
+	text-transform: uppercase
+	max-width: 250px
+
+.modal-body
+	padding: 0
+	display: flex
+	align-items: start
+	flex-wrap: wrap
+	justify-content: space-between
+
+.booking-call
+	text-align: center
+	border: 1px solid #000000
+	border-radius: 3px
+	width: 194px
+	padding: 15px 20px
+	font-size: 36px
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	color: #000000
+	&:hover
+		color: #fff
+	&__tel
+		font-weight: bold
+
+

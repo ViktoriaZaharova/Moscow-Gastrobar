@@ -1,0 +1,374 @@
+@import "fonts"
+@import "vars"
+
+// home
+.home
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../img/home-bg.jpg') no-repeat center
+	background-size: cover
+	padding: 380px 0 145px
+	position: relative
+	overflow: hidden
+	z-index: 1
+
+.name-company
+	max-width: 844px
+	width: 100%
+	@include d-flex
+
+.home-content
+	display: flex
+	flex-direction: column
+	align-items: center
+	max-width: 844px
+	margin: 0 0 0 auto
+
+.home-icon-close
+	position: relative
+	margin: 21px auto 11px
+	width: 77px
+	height: 77px
+	&::before, &:after
+		content: ''
+		width: 100%
+		height: 3px
+		background: $accent
+		position: absolute
+		left: 0
+		top: 37px
+	&::before
+		transform: rotate(45deg)
+	&:after
+		transform: rotate(135deg)
+
+.home-figure
+	@include d-flex
+	display: flex
+	align-items: center
+	justify-content: center
+	max-width: 197px
+	margin: 0 auto
+
+.home-decor
+	position: absolute
+	z-index: -1
+	bottom: 0
+
+.home-decor1
+	left: 0
+
+.home-decor2
+	right: 0
+// home end		
+
+// sales	
+.sales
+	margin: 60px 0 109px
+	h2
+		font-size: 48px
+		margin: 0 0 38px
+
+.sales-slider
+	min-width: 1920px
+	.slick-track
+		display: flex
+		align-items: stretch
+	.slide
+		height: auto
+		width: 953px
+		margin: 0 50px 0 0
+
+.sales-box
+	height: 100%
+	width: 100%
+	display: flex
+	align-items: stretch
+	border: 1px solid #FBBB1F
+	border-radius: 5px
+	padding: 28px 48px 28px 28px
+	h3
+		margin: 0 0 14px
+	&__img
+		@include d-flex
+		width: 330px
+		min-width: 330px
+		// height: 288px
+		border-radius: 3px
+		img
+			border-radius: 3px
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__body
+		width: calc(100% - 330px)
+		padding: 0 0 0 30px
+		display: flex
+		flex-direction: column
+	.btn
+		margin: auto 0 0
+	.box-text
+		margin: 0 0 18px
+
+// sales end	
+
+// space	
+.space
+	margin: 110px 0 150px
+	h2
+		margin: 0 0 117px
+
+.space-slider
+	min-width: 989px
+	
+	.slick-dots
+		position: absolute
+		bottom: 30px
+		justify-content: center
+		width: 100%
+
+.space-item
+	min-width: 989px
+	height: 500px
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+	
+
+.space-box
+	&:nth-child(even)
+		.space-slider
+			float: right
+			margin: 0 56px 0 0
+
+.space-content
+	max-width: 695px
+	width: 100%
+	.box-text
+		margin: 10px 0 54px
+	.h2
+		margin: 0
+		line-height: 111px	
+
+// space	end
+
+// atmosphere	
+.atmosphere
+	padding: 86px 0 0
+	background: #000	
+	h2
+		color: #FBBB1F
+		margin: 0 0 87px
+
+.atmosphere-box
+	width: 100%
+	height: 100%
+	border-radius: 5px
+	@include d-flex
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover	
+		border-radius: 5px
+// atmosphere end
+
+// menu
+.menu-wrapper
+	position: relative
+	z-index: 1
+	width: 100%
+	padding: 75px 0 50px
+	color: #fff
+	margin: 0 0 38px
+	text-align: center
+	overflow: hidden
+	&__bg
+		position: absolute
+		left: 0
+		top: 0
+		z-index: -1
+		@include d-flex
+		width: 100%
+		height: 100%
+		background: url('../img/menu-bg.png') no-repeat center
+		background-size: cover
+		background-attachment: fixed 
+		&::before
+			content: ''
+			position: absolute
+			left: 0 
+			top: 0
+			width: 100%
+			height: 100%
+			background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.box-text
+		max-width: 695px
+		margin: 29px auto 75px	
+	h2
+		margin: 0 auto
+
+.nav-tabs
+	border: none
+	border-radius: 0
+	justify-content: center
+	font-size: 48px
+	.nav-item
+		margin: 0 80px 0 0
+		&:last-child
+			margin: 0		
+	.nav-link
+		border: none
+		padding: 0 0 6px
+		border-radius: 0	
+		border-bottom: 3px solid transparent
+		color: #fff	
+		&.active
+			background: transparent
+			color: #fff
+			border-bottom-color: $accent
+
+.nav-tabs-category
+	font-size: 20px
+	font-weight: normal
+	justify-content: flex-start
+	.nav-item
+		margin: 0 28px 0 0
+		&:last-child
+			margin: 0
+	.nav-link
+		padding: 10px 40px
+		border: 1px solid #FBBB1F
+		border-radius: 3px
+		color: #1A1A18			
+		&.active
+			background: $accent
+			color: #1A1A18	
+			font-weight: 500
+
+.btn-download
+	margin: 0 0 0 auto
+	padding: 6.5px 25px		
+
+.menu-card
+	width: 100%
+	font-size: 20px
+	&__image
+		margin: 0 0 43px
+		width: 100%
+		background: #1A1A18
+		border-radius: 5px
+		color: #fff
+		&-photo
+			width: 100%
+			height: 246px
+			@include d-flex
+			border-radius: 5px 5px 0 0
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+				border-radius: 5px 5px 0 0
+	&__description
+		width: 100%
+		padding: 10px 23px 18px
+	&__title
+		margin: 0 0 7px
+		text-transform: uppercase
+		font-weight: bold		
+		max-width: 230px
+	&__option
+		display: flex
+		align-items: center
+		p
+			&::after
+				content: '|'
+				margin: 0 15px
+			&:last-child
+				&::after
+					display: none			
+	&__body
+		margin: 0 0 43px
+	&__top
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin: 0 0 17px
+		padding: 0 0 17px
+		border-bottom: 1px solid #FBBB1F
+	&__price
+		white-space: nowrap
+		font-weight: bold
+	&__name
+		max-width: 240px	
+	&__weight	
+		color: #B3B3B3	
+// menu end
+
+// contacts	
+.contacts
+	padding: 65px 0 70px	
+	color: #fff
+	font-size: 20px
+	.nav-menu
+		margin: 0 auto
+	.menu
+		flex-direction: column
+		align-items: flex-start
+		li
+			margin: 0 0 11px 0
+			&:last-child
+				margin: 0
+			a
+				color: #fff	
+	.booking
+		flex-direction: column
+		align-items: flex-start
+		p
+			margin: 0 0 11px
+			&:last-child
+				margin: 0			
+
+.schedule
+	margin: 0 0 18px 
+	font-weight: bold
+						
+
+.contacts-box
+	margin: 0 93px
+
+.company-logo
+	@include d-flex
+	max-width: 311px
+
+.menu-document
+	font-weight: 300
+	li
+		margin: 0 0 11px
+		&:last-child
+			margin: 0
+		a
+			color: #fff
+			&:hover
+				color: $accent	
+
+// contacts end	
+
+#map
+	height: 596px
+	width: 100%
+	position: relative	
+	z-index: 1
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 170px
+		background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(255,255,255,0) 100%)
+		z-index: 1
+

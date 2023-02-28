@@ -1,0 +1,251 @@
+@font-face {
+  font-family: "DINPro";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/DINPro/DINPro-Light.eot");
+  src: url("../fonts/DINPro/DINPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro/DINPro-Light.woff") format("woff"), url("../fonts/DINPro/DINPro-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DINPro";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/DINPro/DINPro.eot");
+  src: url("../fonts/DINPro/DINPro.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro/DINPro.woff") format("woff"), url("../fonts/DINPro/DINPro.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DINPro";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/DINPro/DINPro-Medium.eot");
+  src: url("../fonts/DINPro/DINPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro/DINPro-Medium.woff") format("woff"), url("../fonts/DINPro/DINPro-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DINPro";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/DINPro/DINPro-Bold.eot");
+  src: url("../fonts/DINPro/DINPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro/DINPro-Bold.woff") format("woff"), url("../fonts/DINPro/DINPro-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DINPro";
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/DINPro/DINPro-Black.eot");
+  src: url("../fonts/DINPro/DINPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro/DINPro-Black.woff") format("woff"), url("../fonts/DINPro/DINPro-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "YesevaOne";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/YesevaOne/YesevaOne-Regular.eot");
+  src: url("../fonts/YesevaOne/YesevaOne-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/YesevaOne/YesevaOne-Regular.woff") format("woff"), url("../fonts/YesevaOne/YesevaOne-Regular.ttf") format("truetype");
+}
+header {
+  padding: 26px 0 28px;
+  background: #000000;
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.logo {
+  max-width: 128px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  margin: 0 58px 0 0;
+}
+
+.nav-menu {
+  margin: 0 auto 0 220px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.menu li {
+  margin: 0 22px 0 0;
+}
+.menu li:last-child {
+  margin: 0;
+}
+.menu li a {
+  color: #FBBB1F;
+  position: relative;
+}
+.menu li a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: #FBBB1F;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.menu li a:hover::before {
+  width: 100%;
+}
+
+.booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.booking p {
+  margin: 0 11px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.booking p:last-child {
+  margin: 0;
+}
+.booking a {
+  margin: 0 0 0 5px;
+}
+
+.fixed-block-wrapper {
+  position: fixed;
+  z-index: 3;
+  right: -414px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.fixed-block {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  background: #FBBB1F;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 7px 16px 15px;
+  border-radius: 6px 6px 0 0;
+  margin: 0 -127px 0 0;
+}
+.fixed-block span {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+.fixed-block:hover {
+  background: #FEF0CD;
+  color: #000;
+}
+
+.fixed-top-menu {
+  border-radius: 5px 0px 0px 5px;
+  background: #1A1A18;
+  color: #fff;
+  max-width: 414px;
+  width: 100%;
+  font-size: 16px;
+  padding: 18px 25px 21px 19px;
+}
+.fixed-top-menu__gallery {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.fixed-top-menu__box {
+  width: calc(50% - 9px);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.fixed-top-menu__box:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("../img/loupe.svg") no-repeat center;
+  background-size: 100%;
+}
+.fixed-top-menu h3 {
+  margin: 18px 0 10px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.fixed-top-menu .box-text {
+  font-size: 16px;
+}

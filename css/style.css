@@ -1,0 +1,464 @@
+@font-face {
+  font-family: "DINPro";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/DINPro/DINPro-Light.eot");
+  src: url("../fonts/DINPro/DINPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro/DINPro-Light.woff") format("woff"), url("../fonts/DINPro/DINPro-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DINPro";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/DINPro/DINPro.eot");
+  src: url("../fonts/DINPro/DINPro.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro/DINPro.woff") format("woff"), url("../fonts/DINPro/DINPro.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DINPro";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/DINPro/DINPro-Medium.eot");
+  src: url("../fonts/DINPro/DINPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro/DINPro-Medium.woff") format("woff"), url("../fonts/DINPro/DINPro-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DINPro";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/DINPro/DINPro-Bold.eot");
+  src: url("../fonts/DINPro/DINPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro/DINPro-Bold.woff") format("woff"), url("../fonts/DINPro/DINPro-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DINPro";
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/DINPro/DINPro-Black.eot");
+  src: url("../fonts/DINPro/DINPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro/DINPro-Black.woff") format("woff"), url("../fonts/DINPro/DINPro-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "YesevaOne";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/YesevaOne/YesevaOne-Regular.eot");
+  src: url("../fonts/YesevaOne/YesevaOne-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/YesevaOne/YesevaOne-Regular.woff") format("woff"), url("../fonts/YesevaOne/YesevaOne-Regular.ttf") format("truetype");
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: normal;
+  font-family: "DINPro", sans-serif;
+  font-weight: normal;
+  background: #fff;
+  color: #1A1A18;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  outline: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+input, textarea, select {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "DINPro", sans-serif;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 54px;
+  background: transparent;
+  color: #000;
+  font-size: 15px;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
+  color: #595959;
+}
+input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+  color: #595959;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
+  color: #595959;
+}
+input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
+  color: #595959;
+}
+input::placeholder, textarea::placeholder, select::placeholder {
+  color: #595959;
+}
+input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin: 0 0 13px;
+}
+label:last-child {
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+  padding: 12px 17px;
+  height: 103px;
+}
+
+button, .btn {
+  outline: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: "DINPro", sans-serif;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+button:hover, button:focus, .btn:hover, .btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 11.5px 22px;
+  font-size: 20px;
+  font-weight: 500;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 3px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.btn-accent {
+  color: #000000;
+  background: #FBBB1F;
+}
+.btn-accent:hover {
+  background: #FEF0CD;
+  color: #000;
+}
+
+.btn-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 18px;
+  height: 18px;
+  margin: 0 0 0 16px;
+}
+
+.svg-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+strong, b {
+  font-weight: bold;
+  display: inline-block;
+}
+
+ul, ol {
+  padding: 0 0 0 20px;
+}
+
+.my-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-dots {
+  list-style-type: disc;
+}
+
+h2, .h2 {
+  font-family: "YesevaOne", sans-serif;
+  font-size: 96px;
+  width: 100%;
+  margin: 0 0 38px;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.title-overlay {
+  z-index: -1;
+  position: absolute;
+  color: #FEF0CD;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 327px;
+  font-size: 259px;
+  left: -204px;
+  bottom: -88px;
+  font-family: "DINPro", sans-serif;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 45px;
+}
+
+.color-accent {
+  color: #FBBB1F;
+}
+
+a.color-accent:hover {
+  color: #FEF0CD;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.box-text {
+  font-size: 20px;
+  line-height: 25px;
+}
+.box-text p {
+  margin: 0 0 25px;
+}
+.box-text p:last-child {
+  margin: 0;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1540px;
+}
+
+.row {
+  margin: 0 -15px;
+}
+.row > * {
+  padding: 0 15px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.slider-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.slider-nav .slick-prev {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.slick-dots {
+  list-style: none;
+  padding: 0;
+  margin: 0 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  position: relative;
+}
+.slick-dots li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 11px 0 0;
+  border: 1px solid #B3B3B3;
+  border-radius: 50%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+}
+.slick-dots li:last-child {
+  margin: 0;
+}
+.slick-dots li button {
+  display: none;
+}
+.slick-dots li.slick-active {
+  background: #FBBB1F;
+  border-color: #FBBB1F;
+}
+
+.slick-arrow {
+  width: 14px;
+  height: 25px;
+  background: transparent;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  opacity: 1;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  stroke: #B3B3B3;
+  fill: none;
+}
+.slick-arrow:hover {
+  stroke: #000;
+}
+
+.label-checkbox {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  margin: 15px 0 0;
+  line-height: 1.14;
+}
+
+.inp-check {
+  display: none;
+}
+
+.checkbox-custom {
+  margin: 0 12px 0 0;
+  position: relative;
+  border-radius: 6px;
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  cursor: pointer;
+}
+
+.inp-check:checked ~ .checkbox-custom {
+  background: #fff url("../img/check-black.svg") no-repeat center;
+  background-size: 8px;
+}
