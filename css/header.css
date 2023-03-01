@@ -45,7 +45,7 @@ header {
   background: #000000;
   color: #fff;
   font-size: 20px;
-  position: absolute;
+  position: fixed;
   z-index: 3;
   width: 100%;
   left: 0;
@@ -174,13 +174,42 @@ header {
   border-radius: 6px 6px 0 0;
   margin: 0 -127px 0 0;
 }
-.fixed-block span {
+.fixed-block__text {
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
 }
 .fixed-block:hover {
   background: #FEF0CD;
   color: #000;
+}
+.fixed-block__close {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 7px;
+  left: calc(100% + 10px);
+  opacity: 0;
+}
+.fixed-block__close::before, .fixed-block__close:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #FBBB1F;
+  border-radius: 3px;
+  top: 0;
+  left: 13px;
+}
+.fixed-block__close::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.fixed-block__close:after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.fixed-block.trigger .fixed-block__close {
+  opacity: 1;
 }
 
 .fixed-top-menu {
