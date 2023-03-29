@@ -38,6 +38,14 @@ $('.fixed-block').click(function (e) {
 	}
 });
 
+$('.btn-burger').click(function () {
+	$('.nav-menu').fadeToggle();
+});
+
+$('.nav-menu__close').click(function () {
+	$('.nav-menu').fadeOut();
+});
+
 // parallax
 var parallax = new Rellax('.parallax');
 

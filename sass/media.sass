@@ -1,16 +1,500 @@
-/*==========  Desktop First  ==========*/
+/*==========	Desktop First	==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1800px)
+	.home-decor2
+		max-width: 600px
+
+	.home-decor1
+		max-width: 900px
+
+@media only screen and (max-width: 1460px)
+	.nav-menu
+		margin: 0 auto
+
+	.home-decor2
+		max-width: 500px
+
+	.home-decor1
+		max-width: 800px
+
+	.home
+		padding: 260px 0 145px
+
+	.nav-tabs-category .nav-item
+		margin: 0 17px 0 0
+
+	.space-item, .space-slider
+		min-width: 800px
+
+	.contacts-box
+		margin: 0 20px
+
+	.company-logo
+		max-width: 250px
+
+	.developer-box
+		margin: 0 0 0 40px
+
+@media only screen and (max-width: 1300px)
+	.home-decor2
+		max-width: 500px
+
+	.home-decor1
+		max-width: 600px
+
+	.name-company
+		max-width: 700px
+
+	.logo
+		margin: 0 30px 0 0
+
+	.nav-tabs-category
+		width: 100%
+		order: 1
+		justify-content: center
+
+	.btn-download
+		margin: 0 auto 28px
+
+	.title-overlay
+		font-size: 200px
+		line-height: 250px
+		left: -100px
+		bottom: -60px
+
+	.developer-box
+		margin: 52px 0 0
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+
+	.link-developer
+		margin: 0 0 0 22px
+		display: flex
+		align-items: center
+		span
+			margin: 0 7px 0 0
+
 @media only screen and (max-width: 1200px)
+	header
+		.nav-menu
+			display: none
+			position: fixed
+			left: 0
+			top: 0
+			z-index: 10
+			height: 100%
+			max-width: 280px
+			width: 100%
+			overflow-y: auto
+			padding: 40px 30px
+			background: #000
+			&__close
+				display: block
+			.address, .booking
+				display: flex
+			.address
+				margin: 30px 0 20px
+			.booking
+				flex-wrap: wrap
+
+	.menu
+		li
+			width: 100%
+			margin: 0 0 20px
+
+	.btn-burger
+		display: flex
+
+	.logo
+		margin: 0 auto 0 0
+
+	.address
+		margin: 0 20px 0 0
+
+	.nav-tabs-category
+		.nav-item
+			margin: 0 17px 16px 0
+			&:last-child
+				margin: 0 0 16px
+
+	.menu-section
+		.mb-50
+			margin-bottom: 9px
+
+	.menu-card
+		font-size: 16px
+		&__body
+			font-size: 16px
+
+	h2, .h2
+		font-size: 90px
+
+	.space-item, .space-slider
+		min-width: 600px
+
+	.space-box:nth-child(even) .space-slider
+		margin: 0 20px 0 0
+
+	.contacts
+		font-size: 16px
+		padding: 63px 0 45px
+		.menu
+			font-size: 16px
+
+	.menu-document
+		font-size: 14px
 
 @media only screen and (max-width: 992px)
+	header
+		font-size: 15px
+
+	.nav-menu
+		font-size: 18px
+
+	.name-company
+		max-width: 500px
+
+	.home-figure
+		max-width: 138px
+
+	.home-decor1
+		max-width: 450px
+
+	.home-decor2
+		max-width: 350px
+
+	.home
+		padding: 180px 0 100px
+
+	.fixed-block
+		font-size: 18px
+		margin: 0 -115px 0 0
+
+	.sales-slider
+		.slide
+			width: 800px
+
+	.nav-tabs
+		font-size: 30px
+
+	h2, .h2
+		font-size: 80px
+
+	.nav-tabs-category
+		font-size: 20px
+
+	.menu-card__name
+		max-width: 220px
+
+	.space
+		margin: 77px 0 50px
+		h2
+			margin: 0 0 59px
+		.h2
+			margin: 0 0 24px
+
+	.title-overlay
+		font-size: 150px
+		line-height: 170px
+		bottom: -30px
+		left: -20px
+
+	.space-box:nth-child(even) .space-slider
+		margin: 0
+		float: none
+
+	.space-item, .space-slider
+		min-width: auto
+
+	.space-content
+		margin: 24px 0 0
+		max-width: none
+		.box-text
+			max-width: none
+			margin: 0 0 24px
+
+	.space-item
+		height: 400px
+
+	.contacts
+		.nav-menu, .menu-document, .booking, .contacts-box
+			width: 50%
+			margin: 0
+		.booking, .contacts-box
+			margin: 0 0 30px
+
+	.company-logo
+		width: 100%
+		max-width: none
+		margin: 0 auto 30px
+		img
+			max-width: 185px
+
+	.schedule
+		margin: 0 0 8px
 
 @media only screen and (max-width: 768px)
+	header
+		padding: 32px 0 0
+		.booking, .address
+			display: none
+
+	.home-decor2
+		width: 250px
+
+	.home-decor1
+		width: 330px
+
+	.name-company
+		max-width: 310px
+
+	.sales
+		margin: 39px 0 28px
+		h2
+			margin: 0 0 28px
+			font-size: 40px
+
+	.sales-slider
+		.slide
+			width: 274px
+			margin: 0 20px 0 0
+		&__nav
+			margin: auto 0 0 auto
+
+	.sales-box
+		flex-direction: column
+		align-items: flex-start
+		padding: 13px
+		&__img
+			width: 100%
+			height: 220px
+			min-width: auto
+		&__body
+			width: 100%
+			height: calc(100% - 220px)
+			display: flex
+			flex-direction: column
+			padding: 18px 0 0
+		h3
+			margin: 0 0 8px
+
+	h3
+		font-size: 30px
+		line-height: normal
+
+	.box-text
+		font-size: 16px
+		line-height: 20px
+
+	.nav-tabs-menu
+		font-size: 24px
+		.nav-item
+			margin: 0 40px 0 0
+
+	.menu-wrapper
+		.box-text
+			margin: 16px auto 54px
+			max-width: 350px
+
+	.h2, h2
+		font-size: 60px
+
+	.nav-tabs-category
+		justify-content: flex-start
+
+	.space-item
+		height: 300px
+
+	.atmosphere
+		padding: 45px 0 0
+		h3
+			margin: 0 0 34px
 
 @media only screen and (max-width: 576px)
+	.logo
+		max-width: 85px
+
+	.home
+		padding: 314px 0 74px
+
+	.home-decor2
+		display: none
+
+	.home-decor1
+		max-width: none
+		// width: 987px
+		width: 100%
+		bottom: 0
+
+	.name-company
+		max-width: 265px
+
+	.fixed-block
+		font-size: 16px
+		margin: 0 -102px 0 0
+		white-space: nowrap
+
+	.fixed-block-wrapper
+		right: -304px
+
+	.fixed-top-menu
+		max-width: 300px
+
+	h3
+		font-size: 24px
+		line-height: 30px
+
+	.slick-dots
+		margin: 0 10px
+
+	.sales
+		h2
+			font-size: 36px
+
+	.btn
+		padding: 10px 20px
+		font-size: 16px
+		height: 40px
+
+	.nav-tabs-menu
+		flex-wrap: nowrap
+		overflow-x: auto
+		white-space: nowrap
+
+	.menu-wrapper
+		padding: 55px 0 34px
+
+	.menu-section
+		.tab-content
+			.col-6
+				margin-bottom: 20px
+
+	h2, .h2
+		font-size: 48px
+
+	.menu-card
+		height: 100%
+		&__body
+			margin: 0 0 20px
+		&__image
+			margin: 0
+			height: 100%
+			&-photo
+				height: 200px
+		&__description
+			height: calc(100% - 200px)
+			display: flex
+			flex-direction: column
+			padding: 25px 12px 13px
+		&__option
+			margin: auto 0 0
+
+	.space-item
+		height: 230px
+
+	.space
+		.h2, h2
+			font-size: 36px
+
+	.title-overlay
+		font-size: 96px
+		line-height: 121px
+		bottom: -30px
+		left: -30px
+
+	.space-slider .slick-dots
+		margin: 0
+		bottom: 20px
+
+	.atmosphere
+		.mb-30
+			margin-bottom: 10px
+
+	#map
+		height: 443px
+
+	.contacts
+		.nav-menu
+			width: 37%
+		.menu-documents
+			width: 63%
 
 @media only screen and (max-width: 480px)
+	.fixed-top-menu__box:before
+		width: 20px
+		height: 20px
+
+	.fixed-top-menu
+		max-width: 260px
+		.box-text
+			font-size: 14px
+			line-height: normal
+
+	.fixed-block
+		background: #FBBB1F
+
+	.fixed-block-wrapper
+		right: -265px
 
 @media only screen and (max-width: 420px)
+	.home
+		padding: 214px 0 74px
 
-@media only screen and (max-width: 370px)	
+	.fixed-top-menu
+		max-width: 230px
+		padding: 20px
+
+	.fixed-block-wrapper
+		right: -230px
+
+	.fixed-top-menu h3
+		font-size: 14px
+
+	.fixed-top-menu .box-text
+		font-size: 12px
+
+	.nav-tabs-category .nav-link
+		padding: 10px 30px
+
+	.container
+		padding: 0 10px
+
+	.row
+		margin: 0 -10px
+		> *
+			padding: 0 10px
+
+	.menu-card
+		&__image
+			&-photo
+				height: 157px
+		&__description
+			height: calc(100% - 157px)
+		&__title
+			font-size: 14px
+
+	.nav-tabs-menu
+		justify-content: flex-start
+
+	.mb-50
+		margin-bottom: 50px
+
+@media only screen and (max-width: 370px)
+	.home
+		padding: 114px 0 74px
+
+	.fixed-top-menu
+		max-width: 180px
+
+	.fixed-block-wrapper
+		right: -180px
+
+	.sales
+		h2
+			font-size: 30px
+
+	.nav-tabs-category .nav-link
+		padding: 10px 20px

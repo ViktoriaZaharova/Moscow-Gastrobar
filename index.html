@@ -29,16 +29,21 @@
 
 		<div class="fixed-block-wrapper">
 			<a href="#" class="fixed-block"><span class="fixed-block__text">Домашний обед этой недели</span>
-			<span class="fixed-block__close"></span>
+				<span class="fixed-block__close"></span>
 			</a>
 			<div class="fixed-top-menu">
 				<div class="fixed-top-menu__gallery">
-					<a href="img/menu-image1.png" data-fancybox="menu" class="fixed-top-menu__box"><img src="img/menu-image1.png" alt=""></a>
-					<a href="img/menu-image2.png" data-fancybox="menu" class="fixed-top-menu__box"><img src="img/menu-image2.png" alt=""></a>
+					<a href="img/menu-image1.png" data-fancybox="menu" class="fixed-top-menu__box"><img src="img/menu-image1.png"
+							alt=""></a>
+					<a href="img/menu-image2.png" data-fancybox="menu" class="fixed-top-menu__box"><img src="img/menu-image2.png"
+							alt=""></a>
 				</div>
 				<h3>Домашний обед этой недели приветствует вас</h3>
-				<div class="box-text"><p>На десерт предлагаем блинчики, начинаем масленичную неделю правильно. Предложение действует с 12:00 до 15:00 с
-				понедельника по пятницу.</p></div>
+				<div class="box-text">
+					<p>На десерт предлагаем блинчики, начинаем масленичную неделю правильно. Предложение действует с 12:00 до
+						15:00 с
+						понедельника по пятницу.</p>
+				</div>
 			</div>
 		</div>
 
@@ -50,11 +55,24 @@
 						<div class="address">ул. Московская, 93/95</div>
 
 						<nav class="nav-menu">
+							<div class="nav-menu__close"></div>
 							<ul class="menu my-ul">
 								<li><a href="#menu" class="go_to">меню</a></li>
 								<li><a href="#karaoke" class="go_to">караоке</a></li>
 								<li><a href="#atmosphere" class="go_to">атмосфера</a></li>
 							</ul>
+
+							<div class="address">ул. Московская, 93/95</div>
+
+							<div class="booking">
+								<p><strong>Бронь столов</strong></p>
+								<p class="color-accent"><strong>Moscow:</strong><a href="tel:+7495305078"
+										class="d-inline color-accent">30-50-78</a>
+								</p>
+								<p class="color-accent"><strong>Чайхона:</strong><a href="tel:+7495516151"
+										class="d-inlint color-accent">51-61-51</a>
+								</p>
+							</div>
 						</nav>
 
 						<div class="booking">
@@ -64,13 +82,22 @@
 							<p class="color-accent"><strong>Чайхона:</strong><a href="tel:+7495516151"
 									class="d-inlint color-accent">51-61-51</a></p>
 						</div>
+
+						<div class="btn-burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
 					</div>
 				</div>
 			</div>
 		</header>
 
 		<main class="home">
-			<img src="img/home-decor1.png" alt="" class="home-decor home-decor1 parallax" data-rellax-speed="-15">
+			<img src="img/home-decor1.png" alt="" class="home-decor home-decor1 parallax d-none d-sm-block"
+				data-rellax-speed="-15">
+			<img src="img/home-decor1-mobile.png" alt="" class="home-decor home-decor1 parallax d-block d-sm-none"
+				data-rellax-speed="-15">
 			<img src="img/home-decor2.png" alt="" class="home-decor home-decor2 parallax" data-rellax-speed="-15">
 			<div class="container">
 				<div class="row">
@@ -90,10 +117,10 @@
 		<section class="sales">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-12 col-sm-6">
+					<div class="col-7">
 						<h2>События и Акции</h2>
 					</div>
-					<div class="col-12 col-sm-6">
+					<div class="col-5">
 						<div class="slider-nav sales-slider__nav"></div>
 					</div>
 				</div>
@@ -166,18 +193,21 @@
 									используем только свежие и качественные продукты для приготовления наших блюд.</p>
 							</div>
 
-							<ul class="nav nav-tabs" role="tablist">
+							<ul class="nav nav-tabs nav-tabs-menu" role="tablist">
 								<li class="nav-item" role="presentation">
 									<button class="nav-link active" id="nav-tab1" data-bs-toggle="tab" data-bs-target="#tab-content1"
-										type="button" role="tab" aria-controls="tab-content1" aria-selected="true">Moscow</button>
+										type="button" role="tab" aria-controls="tab-content1" aria-selected="true">Moscow
+									</button>
 								</li>
 								<li class="nav-item" role="presentation">
 									<button class="nav-link" id="nav-tab2" data-bs-toggle="tab" data-bs-target="#tab-content2"
-										type="button" role="tab" aria-controls="tab-content2" aria-selected="false">Чайхона</button>
+										type="button" role="tab" aria-controls="tab-content2" aria-selected="false">Чайхона
+									</button>
 								</li>
 								<li class="nav-item" role="presentation">
 									<button class="nav-link" id="nav-tab3" data-bs-toggle="tab" data-bs-target="#tab-content3"
-										type="button" role="tab" aria-controls="tab-content3" aria-selected="false">Барная карта</button>
+										type="button" role="tab" aria-controls="tab-content3" aria-selected="false">Барная карта
+									</button>
 								</li>
 							</ul>
 						</div>
@@ -194,32 +224,38 @@
 									<li class="nav-item" role="presentation">
 										<button class="nav-link active" id="nav-tab-category1" data-bs-toggle="tab"
 											data-bs-target="#tab-content-category1" type="button" role="tab"
-											aria-controls="tab-content-category1" aria-selected="true">Аперетив</button>
+											aria-controls="tab-content-category1" aria-selected="true">Аперетив
+										</button>
 									</li>
 									<li class="nav-item" role="presentation">
 										<button class="nav-link" id="nav-tab-category2" data-bs-toggle="tab"
 											data-bs-target="#tab-content-category2" type="button" role="tab"
-											aria-controls="tab-content-category2" aria-selected="false">Салаты</button>
+											aria-controls="tab-content-category2" aria-selected="false">Салаты
+										</button>
 									</li>
 									<li class="nav-item" role="presentation">
 										<button class="nav-link" id="nav-tab-category3" data-bs-toggle="tab"
 											data-bs-target="#tab-content-category3" type="button" role="tab"
-											aria-controls="tab-content-category3" aria-selected="false">Супы</button>
+											aria-controls="tab-content-category3" aria-selected="false">Супы
+										</button>
 									</li>
 									<li class="nav-item" role="presentation">
 										<button class="nav-link" id="nav-tab-category4" data-bs-toggle="tab"
 											data-bs-target="#tab-content-category4" type="button" role="tab"
-											aria-controls="tab-content-category4" aria-selected="false">Горячее</button>
+											aria-controls="tab-content-category4" aria-selected="false">Горячее
+										</button>
 									</li>
 									<li class="nav-item" role="presentation">
 										<button class="nav-link" id="nav-tab-category5" data-bs-toggle="tab"
 											data-bs-target="#tab-content-category5" type="button" role="tab"
-											aria-controls="tab-content-category5" aria-selected="false">Десерты</button>
+											aria-controls="tab-content-category5" aria-selected="false">Десерты
+										</button>
 									</li>
 									<li class="nav-item" role="presentation">
 										<button class="nav-link" id="nav-tab-category6" data-bs-toggle="tab"
 											data-bs-target="#tab-content-category6" type="button" role="tab"
-											aria-controls="tab-content-category6" aria-selected="false">Закуски</button>
+											aria-controls="tab-content-category6" aria-selected="false">Закуски
+										</button>
 									</li>
 								</ul>
 
@@ -235,7 +271,7 @@
 								<div class="tab-pane fade show active" id="tab-content-category1" role="tabpanel"
 									aria-labelledby="nav-tab-category1">
 									<div class="row">
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -249,28 +285,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Спагетти карбонара <br>
-															по-итальянски</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
 
-													<div class="menu-card__weight">355 гр</div>
-												</div>
-
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Мидии в белом вине
-															с чесноком и петрушкой</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-
-													<div class="menu-card__weight">355 гр</div>
-												</div>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -284,28 +302,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Котлеты из курицы
-															с овощами на гриле</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
 
-													<div class="menu-card__weight">205 гр</div>
-												</div>
-
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Свиные рёбрышки
-															с барбекю-соусом</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-
-													<div class="menu-card__weight">205 гр</div>
-												</div>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -319,28 +320,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Жареный рис
-															с морепродуктами</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
 
-													<div class="menu-card__weight">250 гр</div>
-												</div>
-
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рулетики из куриной
-															грудки с грибами и сыром</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-
-													<div class="menu-card__weight">250 гр</div>
-												</div>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -348,32 +332,111 @@
 													</div>
 													<div class="menu-card__description">
 														<div class="menu-card__title">Спагетти карбонара
-															по-итальянски</div>
+															по-итальянски
+														</div>
 														<div class="menu-card__option">
 															<p>450 гр</p>
 															<p>800 Р</p>
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Говядина "Строганов"
-															с овощами гриль</div>
-														<div class="menu-card__price">470 Р</div>
-													</div>
 
-													<div class="menu-card__weight">520 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Спагетти карбонара <br>
+														по-итальянски
+													</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
 
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рагу из баранины
-															с овощами и специями</div>
-														<div class="menu-card__price">470 Р</div>
-													</div>
+												<div class="menu-card__weight">355 гр</div>
+											</div>
 
-													<div class="menu-card__weight">520 гр</div>
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Мидии в белом вине
+														с чесноком и петрушкой
+													</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Котлеты из курицы
+														с овощами на гриле
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Свиные рёбрышки
+														с барбекю-соусом
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Жареный рис
+														с морепродуктами
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рулетики из куриной
+														грудки с грибами и сыром
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Говядина "Строганов"
+														с овощами гриль
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рагу из баранины
+														с овощами и специями
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
 											</div>
 										</div>
 									</div>
@@ -381,7 +444,7 @@
 								<div class="tab-pane fade" id="tab-content-category2" role="tabpanel"
 									aria-labelledby="nav-tab-category2">
 									<div class="row">
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -395,28 +458,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Спагетти карбонара <br>
-															по-итальянски</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
 
-													<div class="menu-card__weight">355 гр</div>
-												</div>
-
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Мидии в белом вине
-															с чесноком и петрушкой</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-
-													<div class="menu-card__weight">355 гр</div>
-												</div>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -430,28 +475,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Котлеты из курицы
-															с овощами на гриле</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
 
-													<div class="menu-card__weight">205 гр</div>
-												</div>
-
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Свиные рёбрышки
-															с барбекю-соусом</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-
-													<div class="menu-card__weight">205 гр</div>
-												</div>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -465,28 +493,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Жареный рис
-															с морепродуктами</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
 
-													<div class="menu-card__weight">250 гр</div>
-												</div>
-
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рулетики из куриной
-															грудки с грибами и сыром</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-
-													<div class="menu-card__weight">250 гр</div>
-												</div>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -494,32 +505,111 @@
 													</div>
 													<div class="menu-card__description">
 														<div class="menu-card__title">Спагетти карбонара
-															по-итальянски</div>
+															по-итальянски
+														</div>
 														<div class="menu-card__option">
 															<p>450 гр</p>
 															<p>800 Р</p>
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Говядина "Строганов"
-															с овощами гриль</div>
-														<div class="menu-card__price">470 Р</div>
-													</div>
 
-													<div class="menu-card__weight">520 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Спагетти карбонара <br>
+														по-итальянски
+													</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
 
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рагу из баранины
-															с овощами и специями</div>
-														<div class="menu-card__price">470 Р</div>
-													</div>
+												<div class="menu-card__weight">355 гр</div>
+											</div>
 
-													<div class="menu-card__weight">520 гр</div>
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Мидии в белом вине
+														с чесноком и петрушкой
+													</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Котлеты из курицы
+														с овощами на гриле
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Свиные рёбрышки
+														с барбекю-соусом
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Жареный рис
+														с морепродуктами
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рулетики из куриной
+														грудки с грибами и сыром
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Говядина "Строганов"
+														с овощами гриль
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рагу из баранины
+														с овощами и специями
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
 											</div>
 										</div>
 									</div>
@@ -527,7 +617,7 @@
 								<div class="tab-pane fade" id="tab-content-category3" role="tabpanel"
 									aria-labelledby="nav-tab-category3">
 									<div class="row">
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -541,28 +631,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Спагетти карбонара <br>
-															по-итальянски</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
 
-													<div class="menu-card__weight">355 гр</div>
-												</div>
-
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Мидии в белом вине
-															с чесноком и петрушкой</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-
-													<div class="menu-card__weight">355 гр</div>
-												</div>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -576,28 +648,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Котлеты из курицы
-															с овощами на гриле</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
 
-													<div class="menu-card__weight">205 гр</div>
-												</div>
-
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Свиные рёбрышки
-															с барбекю-соусом</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-
-													<div class="menu-card__weight">205 гр</div>
-												</div>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -611,28 +666,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Жареный рис
-															с морепродуктами</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
 
-													<div class="menu-card__weight">250 гр</div>
-												</div>
-
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рулетики из куриной
-															грудки с грибами и сыром</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-
-													<div class="menu-card__weight">250 гр</div>
-												</div>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -640,32 +678,111 @@
 													</div>
 													<div class="menu-card__description">
 														<div class="menu-card__title">Спагетти карбонара
-															по-итальянски</div>
+															по-итальянски
+														</div>
 														<div class="menu-card__option">
 															<p>450 гр</p>
 															<p>800 Р</p>
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Говядина "Строганов"
-															с овощами гриль</div>
-														<div class="menu-card__price">470 Р</div>
-													</div>
 
-													<div class="menu-card__weight">520 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Спагетти карбонара <br>
+														по-итальянски
+													</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
 
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рагу из баранины
-															с овощами и специями</div>
-														<div class="menu-card__price">470 Р</div>
-													</div>
+												<div class="menu-card__weight">355 гр</div>
+											</div>
 
-													<div class="menu-card__weight">520 гр</div>
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Мидии в белом вине
+														с чесноком и петрушкой
+													</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Котлеты из курицы
+														с овощами на гриле
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Свиные рёбрышки
+														с барбекю-соусом
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Жареный рис
+														с морепродуктами
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рулетики из куриной
+														грудки с грибами и сыром
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Говядина "Строганов"
+														с овощами гриль
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рагу из баранины
+														с овощами и специями
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
 											</div>
 										</div>
 									</div>
@@ -673,7 +790,7 @@
 								<div class="tab-pane fade" id="tab-content-category4" role="tabpanel"
 									aria-labelledby="nav-tab-category4">
 									<div class="row">
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -687,28 +804,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Спагетти карбонара <br>
-															по-итальянски</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
 
-													<div class="menu-card__weight">355 гр</div>
-												</div>
-
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Мидии в белом вине
-															с чесноком и петрушкой</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-
-													<div class="menu-card__weight">355 гр</div>
-												</div>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -722,28 +821,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Котлеты из курицы
-															с овощами на гриле</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
 
-													<div class="menu-card__weight">205 гр</div>
-												</div>
-
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Свиные рёбрышки
-															с барбекю-соусом</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-
-													<div class="menu-card__weight">205 гр</div>
-												</div>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -757,28 +839,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Жареный рис
-															с морепродуктами</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
 
-													<div class="menu-card__weight">250 гр</div>
-												</div>
-
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рулетики из куриной
-															грудки с грибами и сыром</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-
-													<div class="menu-card__weight">250 гр</div>
-												</div>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -786,32 +851,111 @@
 													</div>
 													<div class="menu-card__description">
 														<div class="menu-card__title">Спагетти карбонара
-															по-итальянски</div>
+															по-итальянски
+														</div>
 														<div class="menu-card__option">
 															<p>450 гр</p>
 															<p>800 Р</p>
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Говядина "Строганов"
-															с овощами гриль</div>
-														<div class="menu-card__price">470 Р</div>
-													</div>
 
-													<div class="menu-card__weight">520 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Спагетти карбонара <br>
+														по-итальянски
+													</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
 
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рагу из баранины
-															с овощами и специями</div>
-														<div class="menu-card__price">470 Р</div>
-													</div>
+												<div class="menu-card__weight">355 гр</div>
+											</div>
 
-													<div class="menu-card__weight">520 гр</div>
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Мидии в белом вине
+														с чесноком и петрушкой
+													</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Котлеты из курицы
+														с овощами на гриле
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Свиные рёбрышки
+														с барбекю-соусом
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Жареный рис
+														с морепродуктами
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рулетики из куриной
+														грудки с грибами и сыром
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Говядина "Строганов"
+														с овощами гриль
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рагу из баранины
+														с овощами и специями
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
 											</div>
 										</div>
 									</div>
@@ -819,7 +963,7 @@
 								<div class="tab-pane fade" id="tab-content-category5" role="tabpanel"
 									aria-labelledby="nav-tab-category5">
 									<div class="row">
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -833,28 +977,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Спагетти карбонара <br>
-															по-итальянски</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
 
-													<div class="menu-card__weight">355 гр</div>
-												</div>
-
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Мидии в белом вине
-															с чесноком и петрушкой</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-
-													<div class="menu-card__weight">355 гр</div>
-												</div>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -868,28 +994,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Котлеты из курицы
-															с овощами на гриле</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
 
-													<div class="menu-card__weight">205 гр</div>
-												</div>
-
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Свиные рёбрышки
-															с барбекю-соусом</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-
-													<div class="menu-card__weight">205 гр</div>
-												</div>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -903,28 +1012,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Жареный рис
-															с морепродуктами</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
 
-													<div class="menu-card__weight">250 гр</div>
-												</div>
-
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рулетики из куриной
-															грудки с грибами и сыром</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-
-													<div class="menu-card__weight">250 гр</div>
-												</div>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -932,32 +1024,111 @@
 													</div>
 													<div class="menu-card__description">
 														<div class="menu-card__title">Спагетти карбонара
-															по-итальянски</div>
+															по-итальянски
+														</div>
 														<div class="menu-card__option">
 															<p>450 гр</p>
 															<p>800 Р</p>
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Говядина "Строганов"
-															с овощами гриль</div>
-														<div class="menu-card__price">470 Р</div>
-													</div>
 
-													<div class="menu-card__weight">520 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Спагетти карбонара <br>
+														по-итальянски
+													</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
 
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рагу из баранины
-															с овощами и специями</div>
-														<div class="menu-card__price">470 Р</div>
-													</div>
+												<div class="menu-card__weight">355 гр</div>
+											</div>
 
-													<div class="menu-card__weight">520 гр</div>
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Мидии в белом вине
+														с чесноком и петрушкой
+													</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Котлеты из курицы
+														с овощами на гриле
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Свиные рёбрышки
+														с барбекю-соусом
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Жареный рис
+														с морепродуктами
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рулетики из куриной
+														грудки с грибами и сыром
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Говядина "Строганов"
+														с овощами гриль
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рагу из баранины
+														с овощами и специями
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
 											</div>
 										</div>
 									</div>
@@ -965,7 +1136,7 @@
 								<div class="tab-pane fade" id="tab-content-category6" role="tabpanel"
 									aria-labelledby="nav-tab-category6">
 									<div class="row">
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -979,28 +1150,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Спагетти карбонара <br>
-															по-итальянски</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
 
-													<div class="menu-card__weight">355 гр</div>
-												</div>
-
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Мидии в белом вине
-															с чесноком и петрушкой</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-
-													<div class="menu-card__weight">355 гр</div>
-												</div>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1014,28 +1167,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Котлеты из курицы
-															с овощами на гриле</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
 
-													<div class="menu-card__weight">205 гр</div>
-												</div>
-
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Свиные рёбрышки
-															с барбекю-соусом</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-
-													<div class="menu-card__weight">205 гр</div>
-												</div>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1049,28 +1185,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Жареный рис
-															с морепродуктами</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
 
-													<div class="menu-card__weight">250 гр</div>
-												</div>
-
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рулетики из куриной
-															грудки с грибами и сыром</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-
-													<div class="menu-card__weight">250 гр</div>
-												</div>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1078,32 +1197,111 @@
 													</div>
 													<div class="menu-card__description">
 														<div class="menu-card__title">Спагетти карбонара
-															по-итальянски</div>
+															по-итальянски
+														</div>
 														<div class="menu-card__option">
 															<p>450 гр</p>
 															<p>800 Р</p>
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Говядина "Строганов"
-															с овощами гриль</div>
-														<div class="menu-card__price">470 Р</div>
-													</div>
 
-													<div class="menu-card__weight">520 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Спагетти карбонара <br>
+														по-итальянски
+													</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
 
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рагу из баранины
-															с овощами и специями</div>
-														<div class="menu-card__price">470 Р</div>
-													</div>
+												<div class="menu-card__weight">355 гр</div>
+											</div>
 
-													<div class="menu-card__weight">520 гр</div>
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Мидии в белом вине
+														с чесноком и петрушкой
+													</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Котлеты из курицы
+														с овощами на гриле
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Свиные рёбрышки
+														с барбекю-соусом
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Жареный рис
+														с морепродуктами
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рулетики из куриной
+														грудки с грибами и сыром
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Говядина "Строганов"
+														с овощами гриль
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рагу из баранины
+														с овощами и специями
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
 											</div>
 										</div>
 									</div>
@@ -1120,31 +1318,42 @@
 								<ul class="nav nav-tabs nav-tabs-category" role="tablist">
 									<li class="nav-item" role="presentation">
 										<button class="nav-link active" id="nav-tab-category7" data-bs-toggle="tab"
-											data-bs-target="#tab-content-category7" type="button" role="tab" aria-controls="tab-content-category7"
-											aria-selected="true">Аперетив</button>
+											data-bs-target="#tab-content-category7" type="button" role="tab"
+											aria-controls="tab-content-category7" aria-selected="true">Аперетив
+										</button>
 									</li>
 									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="nav-tab-category8" data-bs-toggle="tab" data-bs-target="#tab-content-category8"
-											type="button" role="tab" aria-controls="tab-content-category8" aria-selected="false">Салаты</button>
+										<button class="nav-link" id="nav-tab-category8" data-bs-toggle="tab"
+											data-bs-target="#tab-content-category8" type="button" role="tab"
+											aria-controls="tab-content-category8" aria-selected="false">Салаты
+										</button>
 									</li>
 									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="nav-tab-category9" data-bs-toggle="tab" data-bs-target="#tab-content-category9"
-											type="button" role="tab" aria-controls="tab-content-category9" aria-selected="false">Супы</button>
+										<button class="nav-link" id="nav-tab-category9" data-bs-toggle="tab"
+											data-bs-target="#tab-content-category9" type="button" role="tab"
+											aria-controls="tab-content-category9" aria-selected="false">Супы
+										</button>
 									</li>
 									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="nav-tab-category10" data-bs-toggle="tab" data-bs-target="#tab-content-category10"
-											type="button" role="tab" aria-controls="tab-content-category10" aria-selected="false">Горячее</button>
+										<button class="nav-link" id="nav-tab-category10" data-bs-toggle="tab"
+											data-bs-target="#tab-content-category10" type="button" role="tab"
+											aria-controls="tab-content-category10" aria-selected="false">Горячее
+										</button>
 									</li>
 									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="nav-tab-category11" data-bs-toggle="tab" data-bs-target="#tab-content-category11"
-											type="button" role="tab" aria-controls="tab-content-category11" aria-selected="false">Десерты</button>
+										<button class="nav-link" id="nav-tab-category11" data-bs-toggle="tab"
+											data-bs-target="#tab-content-category11" type="button" role="tab"
+											aria-controls="tab-content-category11" aria-selected="false">Десерты
+										</button>
 									</li>
 									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="nav-tab-category12" data-bs-toggle="tab" data-bs-target="#tab-content-category12"
-											type="button" role="tab" aria-controls="tab-content-category12" aria-selected="false">Закуски</button>
+										<button class="nav-link" id="nav-tab-category12" data-bs-toggle="tab"
+											data-bs-target="#tab-content-category12" type="button" role="tab"
+											aria-controls="tab-content-category12" aria-selected="false">Закуски
+										</button>
 									</li>
 								</ul>
-					
+
 								<a href="#" download="#" target="_blank" class="btn btn-accent btn-download">
 									<span class="btn-text">скачать меню в pdf</span>
 									<span class="btn-icon"><svg class="svg-icon">
@@ -1152,12 +1361,12 @@
 										</svg></span>
 								</a>
 							</div>
-					
+
 							<div class="tab-content">
 								<div class="tab-pane fade show active" id="tab-content-category7" role="tabpanel"
 									aria-labelledby="nav-tab-category1">
 									<div class="row">
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1171,28 +1380,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Спагетти карбонара <br>
-															по-итальянски</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Мидии в белом вине
-															с чесноком и петрушкой</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1206,28 +1397,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Котлеты из курицы
-															с овощами на гриле</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Свиные рёбрышки
-															с барбекю-соусом</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1241,28 +1415,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Жареный рис
-															с морепродуктами</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рулетики из куриной
-															грудки с грибами и сыром</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1270,39 +1427,119 @@
 													</div>
 													<div class="menu-card__description">
 														<div class="menu-card__title">Спагетти карбонара
-															по-итальянски</div>
+															по-итальянски
+														</div>
 														<div class="menu-card__option">
 															<p>450 гр</p>
 															<p>800 Р</p>
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Говядина "Строганов"
-															с овощами гриль</div>
-														<div class="menu-card__price">470 Р</div>
+
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Спагетти карбонара <br>
+														по-итальянски
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рагу из баранины
-															с овощами и специями</div>
-														<div class="menu-card__price">470 Р</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Мидии в белом вине
+														с чесноком и петрушкой
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Котлеты из курицы
+														с овощами на гриле
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Свиные рёбрышки
+														с барбекю-соусом
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Жареный рис
+														с морепродуктами
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рулетики из куриной
+														грудки с грибами и сыром
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Говядина "Строганов"
+														с овощами гриль
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рагу из баранины
+														с овощами и специями
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="tab-content-category8" role="tabpanel" aria-labelledby="nav-tab-category8">
+								<div class="tab-pane fade" id="tab-content-category8" role="tabpanel"
+									aria-labelledby="nav-tab-category8">
 									<div class="row">
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1316,28 +1553,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Спагетти карбонара <br>
-															по-итальянски</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Мидии в белом вине
-															с чесноком и петрушкой</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1351,28 +1570,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Котлеты из курицы
-															с овощами на гриле</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Свиные рёбрышки
-															с барбекю-соусом</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1386,28 +1588,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Жареный рис
-															с морепродуктами</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рулетики из куриной
-															грудки с грибами и сыром</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1415,39 +1600,119 @@
 													</div>
 													<div class="menu-card__description">
 														<div class="menu-card__title">Спагетти карбонара
-															по-итальянски</div>
+															по-итальянски
+														</div>
 														<div class="menu-card__option">
 															<p>450 гр</p>
 															<p>800 Р</p>
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Говядина "Строганов"
-															с овощами гриль</div>
-														<div class="menu-card__price">470 Р</div>
+
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Спагетти карбонара <br>
+														по-итальянски
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рагу из баранины
-															с овощами и специями</div>
-														<div class="menu-card__price">470 Р</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Мидии в белом вине
+														с чесноком и петрушкой
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Котлеты из курицы
+														с овощами на гриле
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Свиные рёбрышки
+														с барбекю-соусом
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Жареный рис
+														с морепродуктами
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рулетики из куриной
+														грудки с грибами и сыром
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Говядина "Строганов"
+														с овощами гриль
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рагу из баранины
+														с овощами и специями
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="tab-content-category9" role="tabpanel" aria-labelledby="nav-tab-category9">
+								<div class="tab-pane fade" id="tab-content-category9" role="tabpanel"
+									aria-labelledby="nav-tab-category9">
 									<div class="row">
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1461,28 +1726,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Спагетти карбонара <br>
-															по-итальянски</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Мидии в белом вине
-															с чесноком и петрушкой</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1496,28 +1743,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Котлеты из курицы
-															с овощами на гриле</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Свиные рёбрышки
-															с барбекю-соусом</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1531,28 +1761,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Жареный рис
-															с морепродуктами</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рулетики из куриной
-															грудки с грибами и сыром</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1560,39 +1773,119 @@
 													</div>
 													<div class="menu-card__description">
 														<div class="menu-card__title">Спагетти карбонара
-															по-итальянски</div>
+															по-итальянски
+														</div>
 														<div class="menu-card__option">
 															<p>450 гр</p>
 															<p>800 Р</p>
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Говядина "Строганов"
-															с овощами гриль</div>
-														<div class="menu-card__price">470 Р</div>
+
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Спагетти карбонара <br>
+														по-итальянски
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рагу из баранины
-															с овощами и специями</div>
-														<div class="menu-card__price">470 Р</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Мидии в белом вине
+														с чесноком и петрушкой
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Котлеты из курицы
+														с овощами на гриле
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Свиные рёбрышки
+														с барбекю-соусом
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Жареный рис
+														с морепродуктами
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рулетики из куриной
+														грудки с грибами и сыром
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Говядина "Строганов"
+														с овощами гриль
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рагу из баранины
+														с овощами и специями
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="tab-content-category10" role="tabpanel" aria-labelledby="nav-tab-category10">
+								<div class="tab-pane fade" id="tab-content-category10" role="tabpanel"
+									aria-labelledby="nav-tab-category10">
 									<div class="row">
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1606,28 +1899,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Спагетти карбонара <br>
-															по-итальянски</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Мидии в белом вине
-															с чесноком и петрушкой</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1641,28 +1916,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Котлеты из курицы
-															с овощами на гриле</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Свиные рёбрышки
-															с барбекю-соусом</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1676,28 +1934,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Жареный рис
-															с морепродуктами</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рулетики из куриной
-															грудки с грибами и сыром</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1705,39 +1946,119 @@
 													</div>
 													<div class="menu-card__description">
 														<div class="menu-card__title">Спагетти карбонара
-															по-итальянски</div>
+															по-итальянски
+														</div>
 														<div class="menu-card__option">
 															<p>450 гр</p>
 															<p>800 Р</p>
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Говядина "Строганов"
-															с овощами гриль</div>
-														<div class="menu-card__price">470 Р</div>
+
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Спагетти карбонара <br>
+														по-итальянски
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рагу из баранины
-															с овощами и специями</div>
-														<div class="menu-card__price">470 Р</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Мидии в белом вине
+														с чесноком и петрушкой
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Котлеты из курицы
+														с овощами на гриле
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Свиные рёбрышки
+														с барбекю-соусом
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Жареный рис
+														с морепродуктами
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рулетики из куриной
+														грудки с грибами и сыром
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Говядина "Строганов"
+														с овощами гриль
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рагу из баранины
+														с овощами и специями
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="tab-content-category11" role="tabpanel" aria-labelledby="nav-tab-category11">
+								<div class="tab-pane fade" id="tab-content-category11" role="tabpanel"
+									aria-labelledby="nav-tab-category11">
 									<div class="row">
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1751,28 +2072,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Спагетти карбонара <br>
-															по-итальянски</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Мидии в белом вине
-															с чесноком и петрушкой</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1786,28 +2089,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Котлеты из курицы
-															с овощами на гриле</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Свиные рёбрышки
-															с барбекю-соусом</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1821,28 +2107,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Жареный рис
-															с морепродуктами</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рулетики из куриной
-															грудки с грибами и сыром</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1850,39 +2119,119 @@
 													</div>
 													<div class="menu-card__description">
 														<div class="menu-card__title">Спагетти карбонара
-															по-итальянски</div>
+															по-итальянски
+														</div>
 														<div class="menu-card__option">
 															<p>450 гр</p>
 															<p>800 Р</p>
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Говядина "Строганов"
-															с овощами гриль</div>
-														<div class="menu-card__price">470 Р</div>
+
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Спагетти карбонара <br>
+														по-итальянски
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рагу из баранины
-															с овощами и специями</div>
-														<div class="menu-card__price">470 Р</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Мидии в белом вине
+														с чесноком и петрушкой
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Котлеты из курицы
+														с овощами на гриле
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Свиные рёбрышки
+														с барбекю-соусом
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Жареный рис
+														с морепродуктами
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рулетики из куриной
+														грудки с грибами и сыром
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Говядина "Строганов"
+														с овощами гриль
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рагу из баранины
+														с овощами и специями
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="tab-content-category12" role="tabpanel" aria-labelledby="nav-tab-category12">
+								<div class="tab-pane fade" id="tab-content-category12" role="tabpanel"
+									aria-labelledby="nav-tab-category12">
 									<div class="row">
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1896,28 +2245,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Спагетти карбонара <br>
-															по-итальянски</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Мидии в белом вине
-															с чесноком и петрушкой</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1931,28 +2262,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Котлеты из курицы
-															с овощами на гриле</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Свиные рёбрышки
-															с барбекю-соусом</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1966,28 +2280,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Жареный рис
-															с морепродуктами</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рулетики из куриной
-															грудки с грибами и сыром</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -1995,32 +2292,111 @@
 													</div>
 													<div class="menu-card__description">
 														<div class="menu-card__title">Спагетти карбонара
-															по-итальянски</div>
+															по-итальянски
+														</div>
 														<div class="menu-card__option">
 															<p>450 гр</p>
 															<p>800 Р</p>
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Говядина "Строганов"
-															с овощами гриль</div>
-														<div class="menu-card__price">470 Р</div>
+
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Спагетти карбонара <br>
+														по-итальянски
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рагу из баранины
-															с овощами и специями</div>
-														<div class="menu-card__price">470 Р</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Мидии в белом вине
+														с чесноком и петрушкой
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Котлеты из курицы
+														с овощами на гриле
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Свиные рёбрышки
+														с барбекю-соусом
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Жареный рис
+														с морепродуктами
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рулетики из куриной
+														грудки с грибами и сыром
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Говядина "Строганов"
+														с овощами гриль
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рагу из баранины
+														с овощами и специями
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
 											</div>
 										</div>
 									</div>
@@ -2036,31 +2412,42 @@
 								<ul class="nav nav-tabs nav-tabs-category" role="tablist">
 									<li class="nav-item" role="presentation">
 										<button class="nav-link active" id="nav-tab-category13" data-bs-toggle="tab"
-											data-bs-target="#tab-content-category13" type="button" role="tab" aria-controls="tab-content-category13"
-											aria-selected="true">Аперетив</button>
+											data-bs-target="#tab-content-category13" type="button" role="tab"
+											aria-controls="tab-content-category13" aria-selected="true">Аперетив
+										</button>
 									</li>
 									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="nav-tab-category14" data-bs-toggle="tab" data-bs-target="#tab-content-category14"
-											type="button" role="tab" aria-controls="tab-content-category14" aria-selected="false">Салаты</button>
+										<button class="nav-link" id="nav-tab-category14" data-bs-toggle="tab"
+											data-bs-target="#tab-content-category14" type="button" role="tab"
+											aria-controls="tab-content-category14" aria-selected="false">Салаты
+										</button>
 									</li>
 									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="nav-tab-category15" data-bs-toggle="tab" data-bs-target="#tab-content-category15"
-											type="button" role="tab" aria-controls="tab-content-category15" aria-selected="false">Супы</button>
+										<button class="nav-link" id="nav-tab-category15" data-bs-toggle="tab"
+											data-bs-target="#tab-content-category15" type="button" role="tab"
+											aria-controls="tab-content-category15" aria-selected="false">Супы
+										</button>
 									</li>
 									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="nav-tab-category16" data-bs-toggle="tab" data-bs-target="#tab-content-category16"
-											type="button" role="tab" aria-controls="tab-content-category16" aria-selected="false">Горячее</button>
+										<button class="nav-link" id="nav-tab-category16" data-bs-toggle="tab"
+											data-bs-target="#tab-content-category16" type="button" role="tab"
+											aria-controls="tab-content-category16" aria-selected="false">Горячее
+										</button>
 									</li>
 									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="nav-tab-category17" data-bs-toggle="tab" data-bs-target="#tab-content-category17"
-											type="button" role="tab" aria-controls="tab-content-category17" aria-selected="false">Десерты</button>
+										<button class="nav-link" id="nav-tab-category17" data-bs-toggle="tab"
+											data-bs-target="#tab-content-category17" type="button" role="tab"
+											aria-controls="tab-content-category17" aria-selected="false">Десерты
+										</button>
 									</li>
 									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="nav-tab-category18" data-bs-toggle="tab" data-bs-target="#tab-content-category18"
-											type="button" role="tab" aria-controls="tab-content-category18" aria-selected="false">Закуски</button>
+										<button class="nav-link" id="nav-tab-category18" data-bs-toggle="tab"
+											data-bs-target="#tab-content-category18" type="button" role="tab"
+											aria-controls="tab-content-category18" aria-selected="false">Закуски
+										</button>
 									</li>
 								</ul>
-					
+
 								<a href="#" download="#" target="_blank" class="btn btn-accent btn-download">
 									<span class="btn-text">скачать меню в pdf</span>
 									<span class="btn-icon"><svg class="svg-icon">
@@ -2068,12 +2455,12 @@
 										</svg></span>
 								</a>
 							</div>
-					
+
 							<div class="tab-content">
 								<div class="tab-pane fade show active" id="tab-content-category13" role="tabpanel"
 									aria-labelledby="nav-tab-category1">
 									<div class="row">
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2087,28 +2474,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Спагетти карбонара <br>
-															по-итальянски</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Мидии в белом вине
-															с чесноком и петрушкой</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2122,28 +2491,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Котлеты из курицы
-															с овощами на гриле</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Свиные рёбрышки
-															с барбекю-соусом</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2157,28 +2509,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Жареный рис
-															с морепродуктами</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рулетики из куриной
-															грудки с грибами и сыром</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2186,39 +2521,119 @@
 													</div>
 													<div class="menu-card__description">
 														<div class="menu-card__title">Спагетти карбонара
-															по-итальянски</div>
+															по-итальянски
+														</div>
 														<div class="menu-card__option">
 															<p>450 гр</p>
 															<p>800 Р</p>
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Говядина "Строганов"
-															с овощами гриль</div>
-														<div class="menu-card__price">470 Р</div>
+
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Спагетти карбонара <br>
+														по-итальянски
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рагу из баранины
-															с овощами и специями</div>
-														<div class="menu-card__price">470 Р</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Мидии в белом вине
+														с чесноком и петрушкой
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Котлеты из курицы
+														с овощами на гриле
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Свиные рёбрышки
+														с барбекю-соусом
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Жареный рис
+														с морепродуктами
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рулетики из куриной
+														грудки с грибами и сыром
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Говядина "Строганов"
+														с овощами гриль
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рагу из баранины
+														с овощами и специями
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="tab-content-category14" role="tabpanel" aria-labelledby="nav-tab-category14">
+								<div class="tab-pane fade" id="tab-content-category14" role="tabpanel"
+									aria-labelledby="nav-tab-category14">
 									<div class="row">
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2232,28 +2647,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Спагетти карбонара <br>
-															по-итальянски</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Мидии в белом вине
-															с чесноком и петрушкой</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2267,28 +2664,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Котлеты из курицы
-															с овощами на гриле</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Свиные рёбрышки
-															с барбекю-соусом</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2302,28 +2682,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Жареный рис
-															с морепродуктами</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рулетики из куриной
-															грудки с грибами и сыром</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2331,39 +2694,119 @@
 													</div>
 													<div class="menu-card__description">
 														<div class="menu-card__title">Спагетти карбонара
-															по-итальянски</div>
+															по-итальянски
+														</div>
 														<div class="menu-card__option">
 															<p>450 гр</p>
 															<p>800 Р</p>
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Говядина "Строганов"
-															с овощами гриль</div>
-														<div class="menu-card__price">470 Р</div>
+
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Спагетти карбонара <br>
+														по-итальянски
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рагу из баранины
-															с овощами и специями</div>
-														<div class="menu-card__price">470 Р</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Мидии в белом вине
+														с чесноком и петрушкой
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Котлеты из курицы
+														с овощами на гриле
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Свиные рёбрышки
+														с барбекю-соусом
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Жареный рис
+														с морепродуктами
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рулетики из куриной
+														грудки с грибами и сыром
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Говядина "Строганов"
+														с овощами гриль
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рагу из баранины
+														с овощами и специями
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="tab-content-category15" role="tabpanel" aria-labelledby="nav-tab-category15">
+								<div class="tab-pane fade" id="tab-content-category15" role="tabpanel"
+									aria-labelledby="nav-tab-category15">
 									<div class="row">
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2377,28 +2820,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Спагетти карбонара <br>
-															по-итальянски</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Мидии в белом вине
-															с чесноком и петрушкой</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2412,28 +2837,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Котлеты из курицы
-															с овощами на гриле</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Свиные рёбрышки
-															с барбекю-соусом</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2447,28 +2855,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Жареный рис
-															с морепродуктами</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рулетики из куриной
-															грудки с грибами и сыром</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2476,39 +2867,119 @@
 													</div>
 													<div class="menu-card__description">
 														<div class="menu-card__title">Спагетти карбонара
-															по-итальянски</div>
+															по-итальянски
+														</div>
 														<div class="menu-card__option">
 															<p>450 гр</p>
 															<p>800 Р</p>
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Говядина "Строганов"
-															с овощами гриль</div>
-														<div class="menu-card__price">470 Р</div>
+
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Спагетти карбонара <br>
+														по-итальянски
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рагу из баранины
-															с овощами и специями</div>
-														<div class="menu-card__price">470 Р</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Мидии в белом вине
+														с чесноком и петрушкой
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Котлеты из курицы
+														с овощами на гриле
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Свиные рёбрышки
+														с барбекю-соусом
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Жареный рис
+														с морепродуктами
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рулетики из куриной
+														грудки с грибами и сыром
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Говядина "Строганов"
+														с овощами гриль
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рагу из баранины
+														с овощами и специями
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="tab-content-category16" role="tabpanel" aria-labelledby="nav-tab-category16">
+								<div class="tab-pane fade" id="tab-content-category16" role="tabpanel"
+									aria-labelledby="nav-tab-category16">
 									<div class="row">
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2522,28 +2993,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Спагетти карбонара <br>
-															по-итальянски</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Мидии в белом вине
-															с чесноком и петрушкой</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2557,28 +3010,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Котлеты из курицы
-															с овощами на гриле</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Свиные рёбрышки
-															с барбекю-соусом</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2592,28 +3028,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Жареный рис
-															с морепродуктами</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рулетики из куриной
-															грудки с грибами и сыром</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2621,39 +3040,119 @@
 													</div>
 													<div class="menu-card__description">
 														<div class="menu-card__title">Спагетти карбонара
-															по-итальянски</div>
+															по-итальянски
+														</div>
 														<div class="menu-card__option">
 															<p>450 гр</p>
 															<p>800 Р</p>
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Говядина "Строганов"
-															с овощами гриль</div>
-														<div class="menu-card__price">470 Р</div>
+
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Спагетти карбонара <br>
+														по-итальянски
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рагу из баранины
-															с овощами и специями</div>
-														<div class="menu-card__price">470 Р</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Мидии в белом вине
+														с чесноком и петрушкой
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Котлеты из курицы
+														с овощами на гриле
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Свиные рёбрышки
+														с барбекю-соусом
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Жареный рис
+														с морепродуктами
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рулетики из куриной
+														грудки с грибами и сыром
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Говядина "Строганов"
+														с овощами гриль
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рагу из баранины
+														с овощами и специями
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="tab-content-category17" role="tabpanel" aria-labelledby="nav-tab-category17">
+								<div class="tab-pane fade" id="tab-content-category17" role="tabpanel"
+									aria-labelledby="nav-tab-category17">
 									<div class="row">
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2667,28 +3166,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Спагетти карбонара <br>
-															по-итальянски</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Мидии в белом вине
-															с чесноком и петрушкой</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2702,28 +3183,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Котлеты из курицы
-															с овощами на гриле</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Свиные рёбрышки
-															с барбекю-соусом</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2737,28 +3201,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Жареный рис
-															с морепродуктами</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рулетики из куриной
-															грудки с грибами и сыром</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2766,39 +3213,119 @@
 													</div>
 													<div class="menu-card__description">
 														<div class="menu-card__title">Спагетти карбонара
-															по-итальянски</div>
+															по-итальянски
+														</div>
 														<div class="menu-card__option">
 															<p>450 гр</p>
 															<p>800 Р</p>
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Говядина "Строганов"
-															с овощами гриль</div>
-														<div class="menu-card__price">470 Р</div>
+
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Спагетти карбонара <br>
+														по-итальянски
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рагу из баранины
-															с овощами и специями</div>
-														<div class="menu-card__price">470 Р</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Мидии в белом вине
+														с чесноком и петрушкой
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Котлеты из курицы
+														с овощами на гриле
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Свиные рёбрышки
+														с барбекю-соусом
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Жареный рис
+														с морепродуктами
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рулетики из куриной
+														грудки с грибами и сыром
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Говядина "Строганов"
+														с овощами гриль
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рагу из баранины
+														с овощами и специями
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="tab-content-category18" role="tabpanel" aria-labelledby="nav-tab-category18">
+								<div class="tab-pane fade" id="tab-content-category18" role="tabpanel"
+									aria-labelledby="nav-tab-category18">
 									<div class="row">
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2812,28 +3339,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Спагетти карбонара <br>
-															по-итальянски</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Мидии в белом вине
-															с чесноком и петрушкой</div>
-														<div class="menu-card__price">320 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">355 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2847,28 +3356,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Котлеты из курицы
-															с овощами на гриле</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Свиные рёбрышки
-															с барбекю-соусом</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">205 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2882,28 +3374,11 @@
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Жареный рис
-															с морепродуктами</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рулетики из куриной
-															грудки с грибами и сыром</div>
-														<div class="menu-card__price">250 Р</div>
-													</div>
-					
-													<div class="menu-card__weight">250 гр</div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-md-3">
+
+										<div class="col-6 col-lg-3">
 											<div class="menu-card">
 												<div class="menu-card__image">
 													<div class="menu-card__image-photo">
@@ -2911,32 +3386,111 @@
 													</div>
 													<div class="menu-card__description">
 														<div class="menu-card__title">Спагетти карбонара
-															по-итальянски</div>
+															по-итальянски
+														</div>
 														<div class="menu-card__option">
 															<p>450 гр</p>
 															<p>800 Р</p>
 														</div>
 													</div>
 												</div>
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Говядина "Строганов"
-															с овощами гриль</div>
-														<div class="menu-card__price">470 Р</div>
+
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Спагетти карбонара <br>
+														по-итальянски
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
-					
-												<div class="menu-card__body">
-													<div class="menu-card__top">
-														<div class="menu-card__name">Рагу из баранины
-															с овощами и специями</div>
-														<div class="menu-card__price">470 Р</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Мидии в белом вине
+														с чесноком и петрушкой
 													</div>
-					
-													<div class="menu-card__weight">520 гр</div>
+													<div class="menu-card__price">320 Р</div>
 												</div>
+
+												<div class="menu-card__weight">355 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Котлеты из курицы
+														с овощами на гриле
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Свиные рёбрышки
+														с барбекю-соусом
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">205 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Жареный рис
+														с морепродуктами
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рулетики из куриной
+														грудки с грибами и сыром
+													</div>
+													<div class="menu-card__price">250 Р</div>
+												</div>
+
+												<div class="menu-card__weight">250 гр</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Говядина "Строганов"
+														с овощами гриль
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
+											</div>
+
+											<div class="menu-card__body">
+												<div class="menu-card__top">
+													<div class="menu-card__name">Рагу из баранины
+														с овощами и специями
+													</div>
+													<div class="menu-card__price">470 Р</div>
+												</div>
+
+												<div class="menu-card__weight">520 гр</div>
 											</div>
 										</div>
 									</div>
@@ -2945,6 +3499,7 @@
 						</div>
 					</div>
 				</div>
+			</div>
 		</section>
 
 		<section class="space">
@@ -2958,9 +3513,26 @@
 				</div>
 
 				<div class="row align-items-center mb-50 space-box">
-					<div class="col-12 col-lg-6 order-lg-1">
+					<div class="col-12 col-lg-6">
+						<div class="h2 d-block d-lg-none">moscow</div>
+						<div class="space-slider">
+							<div class="slide">
+								<a href="img/space1.jpg" class="space-item" data-fancybox="space-img1"><img src="img/space1.jpg"
+										alt=""></a>
+							</div>
+							<div class="slide">
+								<a href="img/space2.jpg" class="space-item" data-fancybox="space-img1"><img src="img/space2.jpg"
+										alt=""></a>
+							</div>
+							<div class="slide">
+								<a href="img/space3.jpg" class="space-item" data-fancybox="space-img1"><img src="img/space3.jpg"
+										alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6">
 						<div class="space-content">
-							<div class="h2">moscow</div>
+							<div class="h2 d-none d-lg-block">moscow</div>
 							<div class="box-text">
 								<p>Мягкое и теплое освещение, нежные цвета интерьера, приятная музыка, все это создает неповторимую
 									атмосферу уюта и
@@ -2980,28 +3552,27 @@
 							<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#modalBooking">Забронировать</a>
 						</div>
 					</div>
-					<div class="col-12 col-lg-6">
-						<div class="space-slider">
-							<div class="slide">
-								<a href="img/space1.jpg" class="space-item" data-fancybox="space-img1"><img src="img/space1.jpg"
-										alt=""></a>
-							</div>
-							<div class="slide">
-								<a href="img/space2.jpg" class="space-item" data-fancybox="space-img1"><img src="img/space2.jpg"
-										alt=""></a>
-							</div>
-							<div class="slide">
-								<a href="img/space3.jpg" class="space-item" data-fancybox="space-img1"><img src="img/space3.jpg"
-										alt=""></a>
-							</div>
-						</div>
-					</div>
+
 				</div>
 
 				<div class="row align-items-center mb-50 space-box">
+						<div class="col-12 col-lg-6 order-lg-1">
+							<div class="h2 d-block d-lg-none">Чайхона</div>
+							<div class="space-slider">
+								<div class="slide">
+									<a href="img/space2.jpg" class="space-item" data-fancybox="space-img2"><img src="img/space2.jpg" alt=""></a>
+								</div>
+								<div class="slide">
+									<a href="img/space1.jpg" class="space-item" data-fancybox="space-img2"><img src="img/space1.jpg" alt=""></a>
+								</div>
+								<div class="slide">
+									<a href="img/space3.jpg" class="space-item" data-fancybox="space-img2"><img src="img/space3.jpg" alt=""></a>
+								</div>
+							</div>
+						</div>
 					<div class="col-12 col-lg-6">
 						<div class="space-content">
-							<div class="h2">Чайхона</div>
+							<div class="h2 d-none d-lg-block">Чайхона</div>
 							<div class="box-text">
 								<p>Чайхана - это место, где встречаются друзья, знакомые и незнакомые, чтобы насладиться ароматным чаем,
 									вкусной едой и
@@ -3015,28 +3586,27 @@
 							<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#modalBooking">Забронировать</a>
 						</div>
 					</div>
-					<div class="col-12 col-lg-6">
-						<div class="space-slider">
-							<div class="slide">
-								<a href="img/space2.jpg" class="space-item" data-fancybox="space-img2"><img src="img/space2.jpg"
-										alt=""></a>
-							</div>
-							<div class="slide">
-								<a href="img/space1.jpg" class="space-item" data-fancybox="space-img2"><img src="img/space1.jpg"
-										alt=""></a>
-							</div>
-							<div class="slide">
-								<a href="img/space3.jpg" class="space-item" data-fancybox="space-img2"><img src="img/space3.jpg"
-										alt=""></a>
-							</div>
-						</div>
-					</div>
+				
 				</div>
 
 				<div class="row align-items-center mb-50 space-box" id="karaoke">
-					<div class="col-12 col-lg-6 order-lg-1">
+					<div class="col-12 col-lg-6">
+						<div class="h2 d-block d-lg-none">Караоке</div>
+						<div class="space-slider">
+							<div class="slide">
+								<a href="img/space3.jpg" class="space-item" data-fancybox="space-img3"><img src="img/space3.jpg" alt=""></a>
+							</div>
+							<div class="slide">
+								<a href="img/space1.jpg" class="space-item" data-fancybox="space-img3"><img src="img/space1.jpg" alt=""></a>
+							</div>
+							<div class="slide">
+								<a href="img/space2.jpg" class="space-item" data-fancybox="space-img3"><img src="img/space2.jpg" alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6">
 						<div class="space-content">
-							<div class="h2">Караоке</div>
+							<div class="h2 d-none d-lg-block">Караоке</div>
 							<div class="box-text">
 								<p>Караоке - это место, где каждый может исполнить свои музыкальные фантазии и отдохнуть после трудного
 									рабочего дня.
@@ -3051,22 +3621,7 @@
 							<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#modalBooking">Забронировать</a>
 						</div>
 					</div>
-					<div class="col-12 col-lg-6">
-						<div class="space-slider">
-							<div class="slide">
-								<a href="img/space3.jpg" class="space-item" data-fancybox="space-img3"><img src="img/space3.jpg"
-										alt=""></a>
-							</div>
-							<div class="slide">
-								<a href="img/space1.jpg" class="space-item" data-fancybox="space-img3"><img src="img/space1.jpg"
-										alt=""></a>
-							</div>
-							<div class="slide">
-								<a href="img/space2.jpg" class="space-item" data-fancybox="space-img3"><img src="img/space2.jpg"
-										alt=""></a>
-							</div>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</section>
@@ -3080,19 +3635,19 @@
 				</div>
 
 				<div class="row">
-					<div class="col-12 col-md-6 col-lg-5 mb-30">
+					<div class="col-6 col-lg-5 mb-30">
 						<a href="img/atmosphere1.png" class="atmosphere-box" data-fancybox="atmosphere"><img
 								src="img/atmosphere1.png" alt=""></a>
 					</div>
-					<div class="col-12 col-md-6 col-lg-3 mb-30">
+					<div class="col-6 col-lg-3 mb-30">
 						<a href="img/atmosphere2.png" class="atmosphere-box" data-fancybox="atmosphere"><img
 								src="img/atmosphere2.png" alt=""></a>
 					</div>
-					<div class="col-12 col-md-6 col-lg-4 mb-30">
+					<div class="col-6 col-lg-4 mb-30">
 						<a href="img/atmosphere3.png" class="atmosphere-box" data-fancybox="atmosphere"><img
 								src="img/atmosphere3.png" alt=""></a>
 					</div>
-					<div class="col-12 col-md-6 col-lg-5 mb-30">
+					<div class="col-6 col-lg-5 mb-30">
 						<a href="img/atmosphere4.png" class="atmosphere-box" data-fancybox="atmosphere"><img
 								src="img/atmosphere4.png" alt=""></a>
 					</div>
@@ -3100,11 +3655,11 @@
 						<a href="img/atmosphere5.png" class="atmosphere-box" data-fancybox="atmosphere"><img
 								src="img/atmosphere5.png" alt=""></a>
 					</div>
-					<div class="col-12 col-md-6 col-lg-3 mb-30">
+					<div class="col-6 col-lg-3 mb-30">
 						<a href="img/atmosphere6.png" class="atmosphere-box" data-fancybox="atmosphere"><img
 								src="img/atmosphere6.png" alt=""></a>
 					</div>
-					<div class="col-12 col-md-6 col-lg-5 mb-30">
+					<div class="col-6 col-lg-5 mb-30">
 						<a href="img/atmosphere7.png" class="atmosphere-box" data-fancybox="atmosphere"><img
 								src="img/atmosphere7.png" alt=""></a>
 					</div>
@@ -3150,6 +3705,14 @@
 								<li><a href="#" target="_blank">Правила посещения</a></li>
 								<li><a href="#" target="_blank">Не является публичной офертой</a></li>
 							</ul>
+
+							<div class="developer-box">
+								<a href="#" class="link-social"><img src="img/vk.svg" alt=""></a>
+								<a href="#" class="link-developer">
+									<span>разработано</span>
+									<img src="img/eleven.svg" alt="">
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -3192,7 +3755,8 @@
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/fancybox.umd.js"></script>
 	<script src="js/slick.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnniXnqAn9pmr-qVqBbAFvFJ4pcsypCFA&callback=initMap" async="" defer="true"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnniXnqAn9pmr-qVqBbAFvFJ4pcsypCFA&callback=initMap"
+		async="" defer="true"></script>
 	<script src="js/rellax.min.js"></script>
 	<script src="js/gsap.min.js"></script>
 	<script src="js/scrollreveal.min.js"></script>
